@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	shakj</title>
+	<style type="text/css">
+	p{
+		font-size:30px;
+		font-family:'微软雅黑';
+		text-align: center;
+		margin:0px;
+	}
+	.content{
+		display: hidden;
+		width: 150px;
+		height:40px;
+		border: 10px double transparent;/*设置透明边框提前站位，为了使鼠标悬停时字不动*/
+	}
+	.content:hover {
+		display: block;
+		border: 10px double #eee;
+		border-radius:20px;
+		width: 150px;
+		height: 40px;
+	}
+	.continer{
+		font-size: 30px;
+		font-family: '微软雅黑';
+		position: relative;
+      	display: inline-block;
+	}
+	.continer .toop{
+		width: 200px;
+		visibility: hidden;
+		background: purple;
+		border-radius: 20px;
+		text-align: center;
+		 position: absolute;
+      	bottom: 100%;/*设置单位高于包含它的元素的底边。*/
+    	left: 100%;
+   		padding: 10px;
+	}
+	.continer:hover .toop{
+		visibility: visible;
+	}
+
+</style>
+</head>
+<body>
+		<div class="content">
+			<p>welcome</p>
+		</div>
+		<br>
+		<br>
+		<div class="continer">
+			鼠标来这里
+			<span class="toop">有点小惊喜</span>
+		</div>
+</body>
+</html>
